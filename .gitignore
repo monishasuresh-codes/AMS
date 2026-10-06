@@ -1,0 +1,17 @@
+node_modules/
+.env
+.env.*
+!.env.example
+
+dist/
+build/
+
+coverage/
+
+*.log
+
+.DS_Store
+Thumbs.db
+
+backend/uploads/*
+!backend/uploads/.gitkeep

@@ -1,13 +1,13 @@
-# Announcement Management System (AMS)
+# DB Productions - Announcement Management System (AMS)
 
-Enterprise-grade, responsive internal Announcement Management System built strictly to the **Master Blueprint Specification**.
+Enterprise-grade, responsive internal Announcement Management System for **DB Productions**, built strictly to the **Master Blueprint Specification**.
 
 ---
 
 ## 🎨 Locked UI/UX Design System & Color Palette
 The design strictly implements the locked color palette from the Master Blueprint specification:
 
-### **Dark Theme (Aurum Analytics Reference)**
+### **Dark Theme (Default)**
 - **Deep Background**: `#0D1016` (Outer background)
 - **Primary Surface**: `#1D2029` (Main panels & cards)
 - **Secondary Surface**: `#31343C` (Sidebar, topbar, elevated surfaces)

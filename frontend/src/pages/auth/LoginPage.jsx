@@ -88,12 +88,12 @@ export default function LoginPage() {
               alignItems: "center",
               justifyContent: "center",
               fontWeight: 800,
-              fontSize: "1.5rem",
+              fontSize: "1.35rem",
               margin: "0 auto 1rem",
               boxShadow: "0 4px 12px rgba(0,0,0,0.2)",
             }}
           >
-            A
+            DB
           </div>
           <h1
             style={{
@@ -104,7 +104,7 @@ export default function LoginPage() {
               letterSpacing: "0.2px",
             }}
           >
-            Announcement Management
+            DB Productions
           </h1>
           <p
             style={{
@@ -112,7 +112,7 @@ export default function LoginPage() {
               color: "var(--color-text-secondary)",
             }}
           >
-            Sign in to access your organization portal
+            Announcement Management Portal
           </p>
         </div>
 
@@ -158,7 +158,7 @@ export default function LoginPage() {
                 type="email"
                 required
                 className="input-field"
-                placeholder="name@ams.com"
+                placeholder="name@dbproductions.com"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 style={{ paddingLeft: "2.5rem" }}
@@ -230,7 +230,7 @@ export default function LoginPage() {
           </button>
         </form>
 
-        {/* Quick Demo Switcher */}
+        {/* Quick Demo Switcher
         <div
           style={{
             marginTop: "2rem",
@@ -281,7 +281,7 @@ export default function LoginPage() {
           >
             Password: <code style={{ color: "var(--color-text-primary)", fontWeight: 600 }}>123456</code>. You can provision custom employees after logging in.
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );

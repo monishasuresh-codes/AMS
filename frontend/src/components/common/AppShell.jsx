@@ -79,8 +79,8 @@ export default function AppShell() {
       <aside className={`sidebar ${mobileMenuOpen ? "mobile-open" : ""}`}>
         <div className="sidebar-header">
           <div className="brand-badge">
-            <div className="brand-logo-icon">A</div>
-            <span>AURUM AMS</span>
+            <div className="brand-logo-icon">DB</div>
+            <span>DB PRODUCTIONS</span>
           </div>
           {mobileMenuOpen && (
             <button

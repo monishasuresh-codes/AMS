@@ -2,9 +2,22 @@ const db = require("./database");
 const bcrypt = require("bcryptjs");
 
 async function seed() {
-  console.log("Starting database seeding...");
+  console.log("Starting database seeding and cleanup...");
 
   try {
+    // 0. Clean announcements, notifications, audit logs, queries, attachments, and non-admin employees
+    console.log("Purging announcements, recipients, queries, notifications, and employees...");
+    await db.query("DELETE FROM announcement_query_messages");
+    await db.query("DELETE FROM announcement_queries");
+    await db.query("DELETE FROM announcement_history");
+    await db.query("DELETE FROM announcement_attachments");
+    await db.query("DELETE FROM announcement_recipients");
+    await db.query("DELETE FROM announcement_targets");
+    await db.query("DELETE FROM notifications");
+    await db.query("DELETE FROM announcements");
+    await db.query("DELETE FROM audit_logs");
+    await db.query("DELETE FROM users WHERE role != 'ADMIN' OR email != 'admin@gmail.com'");
+
     // 1. Roles
     await db.query(`
       INSERT INTO roles (id, name, description) VALUES
@@ -41,6 +54,7 @@ async function seed() {
         ON DUPLICATE KEY UPDATE name=VALUES(name), description=VALUES(description), is_active=VALUES(is_active)
       `, [id, name, desc, active]);
     }
+    await db.query("DELETE FROM departments WHERE id NOT IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16)");
     console.log("Departments verified.");
 
     // 3. Permissions

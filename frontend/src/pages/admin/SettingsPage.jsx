@@ -282,7 +282,7 @@ export default function SettingsPage() {
                 {theme === "light" && <Check size={18} color="var(--color-accent)" />}
               </button>
 
-              {/* Aurum Dark Option */}
+              {/* Dark Theme Option */}
               <button
                 type="button"
                 onClick={() => theme === "light" && toggleTheme()}
@@ -304,7 +304,7 @@ export default function SettingsPage() {
                     <Moon size={14} color="#9B8959" />
                   </div>
                   <div>
-                    <div style={{ fontWeight: 600, fontSize: "0.88rem" }}>Aurum Dark Theme</div>
+                    <div style={{ fontWeight: 600, fontSize: "0.88rem" }}>Dark Theme</div>
                     <div style={{ fontSize: "0.72rem", color: "var(--color-text-muted)" }}>
                       Deep charcoal surface & muted gold accents
                     </div>
